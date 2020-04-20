@@ -1,5 +1,4 @@
 import React from 'react';
-import { AppBar, Tabs, Tab } from '@material-ui/core';
 import HeaderTabs from './../components/HeaderTabs';
 import HeaderTitle from './../components/HeaderTitle';
 

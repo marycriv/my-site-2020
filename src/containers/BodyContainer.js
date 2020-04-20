@@ -1,0 +1,1 @@
+// views: resume & pdf copy (default), projects (thumbnails), about me, links (blogs, linkedin)

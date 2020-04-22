@@ -1,24 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Container from '@material-ui/core/Container';
 import HeaderContainer from './containers/HeaderContainer';
+import ResumeContainer from './containers/ResumeContainer';
 
-// view options: "resume", "about me", "projects", "social media"
-state={
-  view: "resume"
-}
+class App extends Component {
+    // view options: "resume", "about me", "projects", "social media"
+  state={
+    view: "resume"
+  }
 
-// implement later
-// handleViewChange(viewChange) {
-//   this.setState({
-//     view: viewChange
-//   })
-// }
+  // implement later
+  // handleViewChange(viewChange) {
+  //   this.setState({
+  //     view: viewChange
+  //   })
+  // }
 
-function App() {
-  return (
+  render(){
+    return(
     <Container>
       <HeaderContainer />
+      {this.state.view === "resume" ? <ResumeContainer /> : null}
       <div className="App">
         <header className="App-header">
           <p>
@@ -27,7 +30,8 @@ function App() {
         </header>
       </div>
     </Container>
-  );
+    )
+  }
 }
 
 export default App;

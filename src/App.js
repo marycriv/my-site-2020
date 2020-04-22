@@ -5,7 +5,7 @@ import HeaderContainer from './containers/HeaderContainer';
 import ResumeContainer from './containers/ResumeContainer';
 
 class App extends Component {
-    // view options: "resume", "about me", "projects", "social media"
+    // view options: "resume", "about me", "projects", "social media", "contact me"
   state={
     view: "resume"
   }

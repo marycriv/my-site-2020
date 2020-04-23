@@ -5,7 +5,7 @@ class HeaderTitle extends React.Component {
     render(){
         return (
             <AppBar position="static">
-                <p>Title</p>
+                <center><h1>First Last</h1></center>
             </AppBar>
         )
     }

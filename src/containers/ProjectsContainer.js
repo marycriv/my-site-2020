@@ -3,8 +3,8 @@ import React from 'react';
 class ProjectsContainer extends React.Component {
     render(){
         return (
-            <div>
-                <p>ProjectsContainer</p>
+            <div className="projects">
+                <center><h1>Projects</h1></center>
             </div>
         )
     }

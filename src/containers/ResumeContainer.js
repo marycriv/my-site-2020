@@ -1,5 +1,5 @@
 import React from 'react';
-import WorkEntry from './../components/WorkEntry';
+import WorkProjectEntry from './../components/WorkProjectEntry';
 
 class ResumeContainer extends React.Component {
     render(){
@@ -11,7 +11,14 @@ class ResumeContainer extends React.Component {
                 </div>
                 <hr/>
                 <div className="work-experience">
-                    <WorkEntry />
+                    <WorkProjectEntry />
+                    <WorkProjectEntry />
+                </div>
+                <div className="projects"> 
+
+                </div>
+                <div className="education"> 
+
                 </div>
             </div>
         )

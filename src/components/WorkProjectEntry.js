@@ -5,7 +5,7 @@ class WorkProjectEntry extends React.Component {
         return (
             <div className="work-project-entry">
                 <p><b>Company/Project name</b> – [Job Title/Demo link] | [Dates/Github link]</p>
-                <h3>Description of role/Description and premise of project</h3>
+                <p><i>Description of role/Description and premise of project</i></p>
                 <ul>
                     <li>Results and duties 1/Project stack</li>
                     <li>Results and duties 2/Functionality</li>

@@ -22,13 +22,13 @@ class App extends Component {
     <Container>
       <HeaderContainer />
       {this.state.view === "resume" ? <ResumeContainer /> : null}
-      <div className="App">
+      {/* <div className="App">
         <header className="App-header">
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
         </header>
-      </div>
+      </div> */}
     </Container>
     )
   }

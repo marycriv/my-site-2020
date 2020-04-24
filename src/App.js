@@ -4,6 +4,7 @@ import Container from '@material-ui/core/Container';
 import HeaderContainer from './containers/HeaderContainer';
 import ResumeContainer from './containers/ResumeContainer';
 import ProjectsContainer from './containers/ProjectsContainer';
+import AboutMeContainer from './containers/AboutMeContainer';
 
 class App extends Component {
     // view options: "resume", "about me", "projects", "social media", "contact me"
@@ -23,13 +24,6 @@ class App extends Component {
     <Container>
       <HeaderContainer />
       {this.state.view === "resume" ? <ResumeContainer /> : <ProjectsContainer />}
-      <div className="App">
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-        </header>
-      </div>
     </Container>
     )
   }

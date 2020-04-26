@@ -6,7 +6,7 @@ import AboutMeContainer from './AboutMeContainer';
 import SocialMediaContainer from './SocialMediaContainer';
 import ContactMeContainer from './ContactMeContainer';
 
-function BodyContainer(props) {
+export default function BodyContainer(props) {
     
     return(
         <Container>
@@ -22,5 +22,3 @@ function BodyContainer(props) {
         </Container>
     )
 }
-
-export default BodyContainer;

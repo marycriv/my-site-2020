@@ -3,7 +3,7 @@ import Container from '@material-ui/core/Container';
 import BodyContainer from './BodyContainer';
 import HeaderContainer from './HeaderContainer';
 
-function MainContainer() {
+export default function MainContainer() {
 
     const [view, changeView] = useState("resume");
 
@@ -14,5 +14,3 @@ function MainContainer() {
         </Container>
     )
 }
-
-export default MainContainer;

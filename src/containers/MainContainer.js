@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import Container from '@material-ui/core/Container';
 import BodyContainer from './BodyContainer';
 import HeaderContainer from './HeaderContainer';
@@ -12,7 +12,7 @@ function MainContainer() {
     return(
         <Container>
             <HeaderContainer />
-            <BodyContainer />
+            <BodyContainer view={view} />
         </Container>
     )
 }

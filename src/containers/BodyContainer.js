@@ -4,15 +4,12 @@ import ResumeContainer from './ResumeContainer';
 import ProjectsContainer from './ProjectsContainer';
 import AboutMeContainer from './AboutMeContainer';
 
-function BodyContainer() {
-    // view options: "resume", "about me", "projects", "social media", "contact me"
-
-    // changeView should function in the set of buttons in HeaderTabs
-  const [view, changeView] = useState("resume");
+function BodyContainer(props) {
+    
 
     return(
     <Container>
-      {view === "resume" ? <ResumeContainer /> : <ProjectsContainer />}
+      {props.view === "resume" ? <ResumeContainer /> : <ProjectsContainer />}
     </Container>
     )
 }

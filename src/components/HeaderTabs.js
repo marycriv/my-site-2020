@@ -11,9 +11,24 @@ class HeaderTabs extends React.Component {
                     aria-label="simple tabs example"
                     centered
                 >
-                    <Tab label="Item One" />
-                    <Tab label="Item Two" />
-                    <Tab label="Item Three" />
+                    <Tab label="Resume"
+                        onClick={() => this.props.changeView("resume")}
+                    />
+
+                    <Tab label="About Me"
+                        onClick={() => this.props.changeView("about me")}
+                    />
+
+                    <Tab label="Projects"
+                        onClick={() => this.props.changeView("projects")}
+                    />
+                    <Tab label="Social Media"
+                        onClick={() => this.props.changeView("social media")}
+                    />
+
+                    <Tab label="Contact Me"
+                        onClick={() => this.props.changeView("contact me")}
+                    />
                 </Tabs>
             </AppBar>
         )

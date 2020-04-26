@@ -4,14 +4,12 @@ import BodyContainer from './BodyContainer';
 import HeaderContainer from './HeaderContainer';
 
 function MainContainer() {
-    // view options: "resume", "about me", "projects", "social media", "contact me"
 
-    // changeView should function in the set of buttons in HeaderTabs
-  const [view, changeView] = useState("resume");
+    const [view, changeView] = useState("resume");
 
     return(
         <Container>
-            <HeaderContainer />
+            <HeaderContainer changeView={changeView} />
             <BodyContainer view={view} />
         </Container>
     )

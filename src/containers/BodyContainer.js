@@ -6,18 +6,9 @@ import AboutMeContainer from './AboutMeContainer';
 
 function BodyContainer() {
     // view options: "resume", "about me", "projects", "social media", "contact me"
-//   state={
-//     view: "projects"
-//   }
 
-  const [view] = useState("resume");
-
-  // implement later
-  // handleViewChange(viewChange) {
-  //   this.setState({
-  //     view: viewChange
-  //   })
-  // }
+    // changeView should function in the set of buttons in HeaderTabs
+  const [view, changeView] = useState("resume");
 
     return(
     <Container>

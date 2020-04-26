@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import Container from '@material-ui/core/Container';
 import ResumeContainer from './ResumeContainer';
 import ProjectsContainer from './ProjectsContainer';
 import AboutMeContainer from './AboutMeContainer';
 
-class BodyContainer extends Component {
+function BodyContainer() {
     // view options: "resume", "about me", "projects", "social media", "contact me"
-  state={
-    view: "projects"
-  }
+//   state={
+//     view: "projects"
+//   }
+
+  const [view] = useState("resume");
 
   // implement later
   // handleViewChange(viewChange) {
@@ -17,13 +19,11 @@ class BodyContainer extends Component {
   //   })
   // }
 
-  render(){
     return(
     <Container>
-      {this.state.view === "resume" ? <ResumeContainer /> : <ProjectsContainer />}
+      {view === "resume" ? <ResumeContainer /> : <ProjectsContainer />}
     </Container>
     )
-  }
 }
 
 export default BodyContainer;

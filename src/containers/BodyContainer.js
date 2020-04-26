@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React from 'react';
 import Container from '@material-ui/core/Container';
 import ResumeContainer from './ResumeContainer';
 import ProjectsContainer from './ProjectsContainer';

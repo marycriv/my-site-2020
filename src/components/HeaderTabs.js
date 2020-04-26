@@ -11,22 +11,22 @@ export default function HeaderTabs(props) {
                 centered
             >
                 <Tab label="Resume"
-                    onClick={() => this.props.changeView("resume")}
+                    onClick={() => props.changeView("resume")}
                 />
 
                 <Tab label="About Me"
-                    onClick={() => this.props.changeView("about me")}
+                    onClick={() => props.changeView("about me")}
                 />
 
                 <Tab label="Projects"
-                    onClick={() => this.props.changeView("projects")}
+                    onClick={() => props.changeView("projects")}
                 />
                 <Tab label="Social Media"
-                    onClick={() => this.props.changeView("social media")}
+                    onClick={() => props.changeView("social media")}
                 />
 
                 <Tab label="Contact Me"
-                    onClick={() => this.props.changeView("contact me")}
+                    onClick={() => props.changeView("contact me")}
                 />
             </Tabs>
         </AppBar>

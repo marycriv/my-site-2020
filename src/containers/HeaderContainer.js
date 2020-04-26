@@ -7,7 +7,7 @@ class HeaderContainer extends React.Component {
         return (
             <div>
                 <HeaderTitle />
-                <HeaderTabs />
+                <HeaderTabs changeView={this.props.changeView} />
             </div>
         )
     }

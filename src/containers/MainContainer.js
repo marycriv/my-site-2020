@@ -1,5 +1,18 @@
+import React, { useState } from 'react';
+import Container from '@material-ui/core/Container';
+import BodyContainer from './BodyContainer';
+import HeaderContainer from './HeaderContainer';
 
+function MainContainer() {
 
-// Header Container
-// Body container > switches between views
-// Footer container
+    const [view, changeView] = useState("resume");
+
+    return(
+        <Container>
+            <HeaderContainer changeView={changeView} />
+            <BodyContainer view={view} />
+        </Container>
+    )
+}
+
+export default MainContainer;

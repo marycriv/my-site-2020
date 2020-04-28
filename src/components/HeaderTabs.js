@@ -17,14 +17,12 @@ export default function HeaderTabs(props) {
                 <Tab label="About Me"
                     onClick={() => props.changeView("about me")}
                 />
-
                 <Tab label="Projects"
                     onClick={() => props.changeView("projects")}
                 />
                 <Tab label="Social Media"
                     onClick={() => props.changeView("social media")}
                 />
-
                 <Tab label="Contact Me"
                     onClick={() => props.changeView("contact me")}
                 />

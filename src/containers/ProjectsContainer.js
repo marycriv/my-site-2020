@@ -14,6 +14,12 @@ export default function ProjectsContainer() {
                 <ProjectCard name={name} />
                 <ProjectCard name={name} />
             </Grid>
+            <center><h1>Blogs</h1></center>
+            <Grid container alignItems='center'>
+                <ProjectCard name={name} />
+                <ProjectCard name={name} />
+                <ProjectCard name={name} />
+            </Grid>
         </div>
     )
 }

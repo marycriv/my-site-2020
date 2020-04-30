@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ProjectCard from './../components/ProjectCard';
+import BlogCard from './../components/BlogCard';
 import Grid from '@material-ui/core/Grid';
   
 
@@ -16,9 +17,9 @@ export default function ProjectsContainer() {
             </Grid>
             <center><h1>Blogs</h1></center>
             <Grid container alignItems='center'>
-                <ProjectCard name={name} />
-                <ProjectCard name={name} />
-                <ProjectCard name={name} />
+                <BlogCard />
+                <BlogCard />
+                <BlogCard />
             </Grid>
         </div>
     )

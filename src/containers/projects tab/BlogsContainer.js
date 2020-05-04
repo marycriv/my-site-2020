@@ -18,10 +18,10 @@ export default function BlogsContainer() {
     return (
         <Grid container spacing={3} className={classes.gridCenter}>
             <Grid item xs={3}>
-                <BlogCard name={"Blog Title 1"} />
+                <BlogCard name={"Scripting resources"} />
             </Grid>
             <Grid item xs={3}>
-                <BlogCard name={"Blog Title 2"} />
+                <BlogCard name={"Other topics, include stats"} />
             </Grid>
             <Grid item xs={3}>
                 <BlogCard name={"Blog Title 3"} />

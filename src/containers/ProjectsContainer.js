@@ -1,25 +1,9 @@
-import React, { useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import ProjectCard from './../components/ProjectCard';
-import BlogCard from './../components/BlogCard';
-import Grid from '@material-ui/core/Grid';
+import React from 'react';
 import PersonalProjects from './projects tab/PersonalProjectsContainer'
 import ProfessionalProjects from './projects tab/ProfessionalProjectsContainer'
 import Blogs from './projects tab/BlogsContainer'
 
-const useStyles = makeStyles(theme => ({
-    gridCenter: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-  }))
-
 export default function ProjectsContainer() {
-
-    // const [name] = useState("Project");
-
-    const classes = useStyles()
 
     return (
         <div className="projects">
